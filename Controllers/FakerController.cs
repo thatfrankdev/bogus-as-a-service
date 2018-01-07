@@ -20,12 +20,10 @@ namespace Bogus.Web.Controllers
             var routes = RouteData.Routers.OfType<RouteCollection>().First();
             var routeTemplates = new List<string>();
 
-            var host = Request.GetDisplayUrl();
-
             for (var i = 0; i < routes.Count; i++)
             {
                 if (!(routes[i] is Route route)) continue;
-                routeTemplates.Add(host + route.RouteTemplate);
+                routeTemplates.Add(route.RouteTemplate);
             }
 
             return Json(
