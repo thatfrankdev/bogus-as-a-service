@@ -17,7 +17,7 @@ dotnet run
 
 ### Query parameters
 * `seed` : Used to fix randomizer seed so that the random sequences generated are always the same. This must be an integer number.
-* `locale` : Used to set the locale of the inner datasets to be used. Supported locales are documented listed [here](https://github.com/bchavez/Bogus#locales)
+* `locale` : Used to set the locale of the inner datasets to be used. Supported locales are listed [here](https://github.com/bchavez/Bogus#locales)
 
 ### Examples
 * [/internet/email](https://bogus-as-a-service.azurewebsites.net/internet/email)
